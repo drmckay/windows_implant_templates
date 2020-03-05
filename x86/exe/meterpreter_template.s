@@ -1,3 +1,11 @@
+; Compile with mingw
+; i686-w64-mingw32-gcc meterpreter_template.s -o meterpreter_template.exe -nostdlib -lkernel32 -Wall -Wextra -ffreestanding 
+; windows_implant_templates/x86/exe/meterpreter_template.s: Assembler messages:
+; windows_implant_templates/x86/exe/meterpreter_template.s:341: Warning: indirect jmp without `*'
+;
+;
+
+
 .section .data
 
 .globl _code

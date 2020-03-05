@@ -1,1 +1,25 @@
 theme: jekyll-theme-hacker
+title: Windows Implant Templates
+description: I will document and publicate my researches on this GitHub page with complete sources.
+baseurl: /
+author:
+  name: Peter Veres
+  email: moltesalt@gmail.com
+  url: "https://drmckay.github.io"
+
+source: .
+destination: ./_site
+permalink: /:title
+paginate: 10
+paginate_path: /page/:num/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+owner: Peter Veres
+year: 2020
