@@ -1,0 +1,23 @@
+- title: Documentation
+  url: docs
+  links:
+    - title: "Goals and Objectives"
+      url: "docs/goals-and-objectives"
+    - title: "Techniques"
+      url: "docs/techniques"
+      children:
+        - title: Code Execution
+          url: "docs/techniques#execution"
+        - title: 
+          url: "docs/techniques#development"
+        - title: Customization
+          url: "docs/techniques#customization"
+    - title: "Frameworks"
+      url: "docs/frameworks"
+      children:
+        - title: Metasploit
+          url: "docs/frameworks#metasploit"
+        - title: Tags Page
+          url: "tags"
+    - title: "About"
+      url: "about"
