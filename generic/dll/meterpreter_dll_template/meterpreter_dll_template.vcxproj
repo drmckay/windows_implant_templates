@@ -23,6 +23,7 @@
     <ProjectGuid>{0650699B-B709-4F94-8E30-C37C31952556}</ProjectGuid>
     <RootNamespace>meterpreterdlltemplate</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>meterpreter_dll_template</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
