@@ -221,8 +221,6 @@ copy  "$(OutDir)$(TargetName)$(TargetExt)" "$(SolutionDir)release\$(PlatformShor
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="resource.h" />
     <ClInclude Include="template.h" />
   </ItemGroup>
   <ItemGroup>

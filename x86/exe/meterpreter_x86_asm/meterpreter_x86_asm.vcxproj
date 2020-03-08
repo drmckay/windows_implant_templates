@@ -61,12 +61,13 @@
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
     <CustomBuild>
       <Command>cd C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
-gcc.exe %(FullPath) -o $(OutDir)$(TargetName)$(TargetExt) -nostdlib -lkernel32</Command>
+gcc.exe %(FullPath) -o $(OutDir)$(TargetName)$(TargetExt) -nostdlib -lkernel32 -Wl,--subsystem,windows -mwindows
+</Command>
       <Outputs>$(OutDir)$(TargetName)$(TargetExt)</Outputs>
       <LinkObjects>false</LinkObjects>
       <TreatOutputAsContent>true</TreatOutputAsContent>
@@ -82,7 +83,7 @@ gcc.exe %(FullPath) -o $(OutDir)$(TargetName)$(TargetExt) -nostdlib -lkernel32</
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
+      <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -93,7 +94,8 @@ gcc.exe %(FullPath) -o $(OutDir)$(TargetName)$(TargetExt) -nostdlib -lkernel32</
     </Link>
     <CustomBuild>
       <Command>cd C:\mingw-w64\i686-8.1.0-posix-dwarf-rt_v6-rev0\mingw32\bin
-gcc.exe %(FullPath) -o $(OutDir)$(TargetName)$(TargetExt) -nostdlib -lkernel32</Command>
+gcc.exe %(FullPath) -o $(OutDir)$(TargetName)$(TargetExt) -nostdlib -lkernel32 -Wl,--subsystem,windows -mwindows
+</Command>
       <Outputs>$(OutDir)$(TargetName)$(TargetExt)</Outputs>
       <LinkObjects>false</LinkObjects>
       <TreatOutputAsContent>true</TreatOutputAsContent>
